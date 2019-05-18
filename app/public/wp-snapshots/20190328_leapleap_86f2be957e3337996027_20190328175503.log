@@ -1,0 +1,84 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: March 28, 2019 5:55 pm
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.3.10
+WORDPRESS:	5.1.1
+PHP INFO:	7.2.9 | SAPI: fpm-fcgi
+SERVER:		nginx/1.14.0 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 8MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+SQL CREATED: 20190328_leapleap_86f2be957e3337996027_20190328175503_database.sql 
+SQL FILE SIZE: 935.41KB (957859) 
+SQL FILE TIME: 2019-03-28 17:56:01 
+SQL RUNTIME: 6.72 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /app/public 
+ARCHIVE FILE: 20190328_leapleap_86f2be957e3337996027_20190328175503_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	176.78MB 
+STATS:	Dirs 1,133 | Files 7,089 
+SQL ADDED: 20190328_leapleap_86f2be957e3337996027_20190328175503_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 8222
+    [filename] => /app/public/wp-snapshots/tmp/20190328_leapleap_86f2be957e3337996027_20190328175503_archive.zip
+    [comment] => 
+)
+ 
+FILE ADDED TO ZIP: 8221 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 67.81MB 
+ARCHIVE RUNTIME: 151.01 sec. 
+MEMORY STACK: 10MB 
+building installer 
+add_extra_files1 
+add_extra_files2 
+add_extra_files3 
+add_extra_files4 
+Doing archive file check 
+add_extra_files5 
+add_extra_files6 
+add_extra_files8 
+Successfully opened zip /app/public/wp-snapshots/tmp/20190328_leapleap_86f2be957e3337996027_20190328175503_archive.zip 
+Adding enhanced installer files to archive using ZipArchive 
+Installer files added to archive 
+Added to archive 
+After ziparchive close when adding installer 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL FILE: 935.41KB 
+INSTALLER FILE: 207.32KB 
+ARCHIVE FILE: 68.79MB  
+EXPECTED FILE/DIRECTORY COUNT: 8,222 
+ACTUAL FILE/DIRECTORY COUNT: 8,221 
+ARCHIVE CONSISTENCY TEST: Pass 
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 164.09 sec.
+PEAK PHP MEMORY USED: 12MB
+DONE PROCESSING => 20190328_leapleap March 28, 2019 5:58 pm
+ 

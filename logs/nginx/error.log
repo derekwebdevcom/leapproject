@@ -1,0 +1,2 @@
+2019/03/18 09:51:39 [error] 27#0: *866 directory index of "/app/public/wp-content/themes/understrap/img/" is forbidden, client: 127.0.0.1, server: , request: "GET /wp-content/themes/understrap/img/ HTTP/1.0", host: "leapleap.local", referrer: "http://leapleap.local/"
+2019/03/18 09:51:57 [error] 27#0: *912 directory index of "/app/public/wp-content/themes/understrap/img/" is forbidden, client: 127.0.0.1, server: , request: "GET /wp-content/themes/understrap/img/ HTTP/1.0", host: "leapleap.local", referrer: "http://leapleap.local/"

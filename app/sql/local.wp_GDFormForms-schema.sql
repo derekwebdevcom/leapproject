@@ -1,0 +1,38 @@
+/*!40101 SET NAMES binary*/;
+/*!40014 SET FOREIGN_KEY_CHECKS=0*/;
+
+CREATE TABLE `wp_GDFormForms` (
+  `Id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `Name` text,
+  `DisplayTitle` int(1) unsigned NOT NULL DEFAULT '1',
+  `ActionOnsubmitId` int(11) unsigned NOT NULL DEFAULT '1',
+  `LabelsPositionId` int(11) unsigned NOT NULL DEFAULT '4',
+  `ThemeId` int(5) unsigned NOT NULL DEFAULT '1',
+  `EmailUsers` int(1) unsigned NOT NULL DEFAULT '1',
+  `EmailAdmin` int(1) unsigned NOT NULL DEFAULT '1',
+  `FromEmail` varchar(50) DEFAULT NULL,
+  `FromName` varchar(50) DEFAULT NULL,
+  `UserSubject` varchar(255) DEFAULT 'You Submitted a Form',
+  `AdminSubject` varchar(255) DEFAULT 'A Form Was Submitted on Your Website',
+  `UserMessage` text,
+  `AdminMessage` text,
+  `AdminEmail` varchar(50) DEFAULT NULL,
+  `SuccessMessage` text,
+  `HideFormOnsubmit` int(1) DEFAULT '0',
+  `RedirectUrl` varchar(255) DEFAULT NULL,
+  `EmailFormatError` varchar(100) DEFAULT NULL,
+  `RequiredEmptyError` varchar(100) DEFAULT NULL,
+  `UploadSizeError` varchar(100) DEFAULT NULL,
+  `UploadFormatError` varchar(100) DEFAULT NULL,
+  `SaveSubmissions` int(1) DEFAULT '1',
+  `Recaptcha` varchar(7) DEFAULT NULL,
+  `SubmitNoticeShown` int(1) DEFAULT '0',
+  `IsPreview` int(1) DEFAULT '0',
+  PRIMARY KEY (`Id`),
+  KEY `ThemeId` (`ThemeId`),
+  KEY `LabelsPositionId` (`LabelsPositionId`),
+  KEY `ActionOnsubmitId` (`ActionOnsubmitId`),
+  CONSTRAINT `wp_GDFormForms_ibfk_1` FOREIGN KEY (`ThemeId`) REFERENCES `wp_GDFormThemes` (`Id`),
+  CONSTRAINT `wp_GDFormForms_ibfk_2` FOREIGN KEY (`LabelsPositionId`) REFERENCES `wp_GDFormLabelPositions` (`Id`) ON DELETE CASCADE,
+  CONSTRAINT `wp_GDFormForms_ibfk_3` FOREIGN KEY (`ActionOnsubmitId`) REFERENCES `wp_GDFormOnsubmitActions` (`Id`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
